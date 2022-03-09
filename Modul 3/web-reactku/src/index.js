@@ -2,7 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Test from './Test';
 import List from './List';
-import Component from './Component/HelloComponent'; 
+import Component from './Component/HelloComponent';
+import Login from './Login/Login';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
@@ -25,7 +26,7 @@ class StateFullComponent extends React.Component{
   }
 }
 
-ReactDOM.render(<Component />, document.getElementById('root'));
+ReactDOM.render(<Login />, document.getElementById('root'));
 
 
 // If you want to start measuring performance in your app, pass a function
