@@ -5,7 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 import BlogPost from "./Container/BlogPost/BlogPost"
-import 'bootstrap/dist/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 ReactDOM.render(<BlogPost />, document.getElementById('root'));
 
 /*ReactDOM.render(
