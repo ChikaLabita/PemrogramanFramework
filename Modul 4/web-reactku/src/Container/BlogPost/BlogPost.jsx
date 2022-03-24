@@ -1,11 +1,11 @@
-import React, {Component} from "react";
+import React, { Component } from "react";
 import './BlogPost.css';
 import Post from "../../Component/BlogPost/Post";
 import { render } from "react-dom";
 
-class BlogPost extends Component{
+class BlogPost extends Component {
 
-	 state = {
+    state = {
         listArtikel: []
     }
 
@@ -19,18 +19,20 @@ class BlogPost extends Component{
             })
     }
 
-	render() {
-		return(
-			<div class="post-artikel">
-            <h2>Daftar artikel</h2>
-            {
+    render() {
+        return ( 
+            <div class = "post-artikel" >
+            <h2 > Daftar artikel </h2> {
                 this.state.listArtikel.map(artikel => {
-                    return <Post key={artikel.id} judul={artikel.title} isi={artikel.body} />
+                    return <Post key = { artikel.id }
+                    judul = { artikel.title }
+                    isi = { artikel.body }
+                    />
                 })
-            }
+            } 
             </div>
-		)
-	}
+        )
+    }
 }
 
 export default BlogPost;
