@@ -4,7 +4,7 @@ import Post from "../../Component/BlogPost/Post";
 import { render } from "react-dom";
 
 class BlogPost extends Component {
-
+    
     state = {
         listArtikel: []
     }
