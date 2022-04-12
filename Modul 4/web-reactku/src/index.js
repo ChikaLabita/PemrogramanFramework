@@ -3,10 +3,10 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
-import BlogPost from "./Container/BlogPost/BlogPost"
+import BlogPost_Mhs from "./Tugas4/Tugas4/BlogPost_Mhs"
 import 'bootstrap/dist/css/bootstrap.min.css';
-ReactDOM.render(<BlogPost />, document.getElementById('root'));
+
+ReactDOM.render(<BlogPost_Mhs />, document.getElementById('content'));
 
 /*ReactDOM.render(
   <React.StrictMode>
