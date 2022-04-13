@@ -316,15 +316,45 @@ function LoginPage() {
 } */
 
 //Assignment Online Shop
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  useParams,
+  useRouteMatch,
+  useHistory,
+  useLocation,
+  Redirect
+} from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-
+export default function App(){
+  return (
+    <Router>
+      <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">Toko Hijrah | | Istiqomah</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">Troly</a></li>
+          </ul>
+          </div>
+        </nav>
+    </Router>
+    
+  )
+}
 
 
 //function App() {
   /*return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src={logo} className="App-logo" alt="logo" /> 
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
