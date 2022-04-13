@@ -14,9 +14,6 @@ ReactDOM.render(<Provider store={store}>
 <Table />,
 </Provider>
 , document.getElementById('root'));
-reportWebVitals();
-
-
 
 /*ReactDOM.render(
   <React.StrictMode>

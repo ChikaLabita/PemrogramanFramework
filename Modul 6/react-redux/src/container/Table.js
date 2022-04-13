@@ -8,6 +8,7 @@ import {
 import { SHOW_ALL, SHOW_COMPLETED, SHOW_ACTIVE } from '../Action/actionsTypes';
 import { bindActionCreators } from "redux";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import '/node_modules/font-awesome/css/font-awesome.min.css';
 class Table extends Component {
     render() {
         return (
@@ -60,16 +61,16 @@ class Table extends Component {
                                     </td>
                                     <td>
                                         <span
-                                            className="fas fa-minus-circle"
+                                            className="fa fa-minus-circle"
                                             onClick={() => this.props.deleteTodo(todo.id)}
                                             style={{
                                                 color: "white",
                                                 fontSize: "20pt",
                                                 marginRight: "20px"
                                             }}
-                                        /> delete
+                                        />
                                         <span
-                                            className="fas fa-check-circle"
+                                            className="fa fa-check-circle"
                                             onClick={() => this.props.toggleTodo(todo.id)}
                                             style={{ color: "white", fontSize: "20pt" }}
                                         />
