@@ -1,0 +1,52 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "img": "1.jfif",
+      "name": "Dummy",
+      "description": "Dummy",
+      "price": "2000000",
+      "stock": 200
+    },
+    {
+      "id": 2,
+      "img": "2.jfif",
+      "name": "Dummy",
+      "description": "Dummy",
+      "price": "195000",
+      "stock": 100
+    },
+    {
+      "id": 3,
+      "img": "3.jpg",
+      "name": "Dummy",
+      "description": "Dummy",
+      "price": "265000",
+      "stock": "200"
+    },
+    {
+      "id": 4,
+      "img": "4.jpg",
+      "name": "Dummy",
+      "description": "Dummy",
+      "price": "185000",
+      "stock": "100"
+    },
+    {
+      "id": 5,
+      "img": "5.png",
+      "name": "Dummy",
+      "description": "Dummy",
+      "price": "805000",
+      "stock": "150"
+    },
+    {
+      "id": 6,
+      "img": "6.jpg",
+      "name": "Dummy",
+      "description": "Dummy",
+      "price": "Dummy",
+      "stock": "250"
+    }
+  ]
+}
