@@ -2,10 +2,55 @@
   "carts": [
     {
       "id": 1,
+      "product_id": 2,
+      "product_name": "Dummy",
+      "product_img": "2.png",
+      "product_price": "2000000",
+      "total": 2000000,
+      "qty": 1
+    },
+    {
+      "id": 1649929780493,
       "product_id": 1,
       "product_name": "Dummy",
-      "product_img": "1.jiff",
+      "product_img": "1.jpeg",
       "product_price": "2000000",
+      "product_stock": 200,
+      "total": 2000000,
+      "qty": 1
+    },
+    {
+      "id": 1649930630736,
+      "product_id": 1,
+      "product_name": "Dummy",
+      "product_img": "1.jpeg",
+      "product_price": "2000000",
+      "product_stock": 200,
+      "total": 2000000,
+      "qty": 1
+    },
+    {
+      "id": 1649930640865,
+      "total": null,
+      "qty": 1
+    },
+    {
+      "id": 1649930683411,
+      "product_id": 1,
+      "product_name": "Dummy",
+      "product_img": "1.jpeg",
+      "product_price": "2000000",
+      "product_stock": 200,
+      "total": 2000000,
+      "qty": 1
+    },
+    {
+      "id": 1649930855515,
+      "product_id": 1,
+      "product_name": "Dummy",
+      "product_img": "1.jpeg",
+      "product_price": "2000000",
+      "product_stock": 200,
       "total": 2000000,
       "qty": 1
     }

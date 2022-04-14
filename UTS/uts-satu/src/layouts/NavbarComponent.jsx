@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Navbarcomponent = () => {
   return (
-    <Navbar collapseOnSelect expand="lg" bg="$indigo-400" variant="$indigo-400">
+    <Navbar bg="dark" variant="dark">
       <Container>
         <Navbar.Brand>Barakah-Istiqomah</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />

@@ -9,7 +9,6 @@ import {
   updateQty,
 } from "../../redux/actions/cartActions";
 import { checkoutAll } from "../../redux/actions/transactionActions";
-
 const Cart = () => {
   const { carts_state } = useSelector((state) => state);
   const dispatch = useDispatch();
@@ -60,7 +59,7 @@ const Cart = () => {
       <div className="my-5">
         <h1>Carts</h1>
         <hr />
-        <Table table table-dark table-striped>
+        <Table striped bordered hover variant="dark">
           <thead>
             <tr>
               <th>#</th>
@@ -80,12 +79,13 @@ const Cart = () => {
                     <td>{key + 1}</td>
                     <td>
                       <Image
-                        src={"/images/" + item.product_img}
+                        src={"images/" + item.product_img}
                         className="img-thumbnail"
                         width={150}
                       />
                     </td>
                     <td>{item.product_name}</td>
+                    <td>{item.product_price}</td>
                     <td>
                       <Form.Control
                         className="mx-3 text-center"
@@ -96,6 +96,7 @@ const Cart = () => {
                         onChange={handleUpdateCart(item)}
                       />
                     </td>
+                    <td>{item.total}</td>
                     <td>
                       <Button
                         type="submit"
@@ -115,7 +116,7 @@ const Cart = () => {
             )}
           </tbody>
         </Table>
-        <h5>Jumlah : {carts_state.jumlah} </h5>
+        <h5><right>Jumlah : {carts_state.jumlah}</right></h5>
         <Button type="submit" variant="primary" onClick={handleCheckoutAll()}>
           Checkout
         </Button>

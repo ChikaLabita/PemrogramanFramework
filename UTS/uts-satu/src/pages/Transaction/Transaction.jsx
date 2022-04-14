@@ -16,7 +16,7 @@ const Transaction = () => {
       <div className="my-5">
         <h1>Transactions</h1>
         <hr />
-        <Table table table-dark table-striped>
+        <Table striped bordered hover variant="dark">
           <thead>
             <tr>
               <th>#</th>
@@ -36,13 +36,15 @@ const Transaction = () => {
                     <td>{key + 1}</td>
                     <td>
                       <Image
-                        src={"/images/" + item.product_img}
+                        src={"images/" + item.product_img}
                         className="img-thumbnail"
                         width={150}
                       />
                     </td>
                     <td>{item.product_name}</td>
+                    <td>{item.product_price}</td>
                     <td>{item.qty}</td>
+                    <td>{item.total}</td>
                   </tr>
                 );
               })

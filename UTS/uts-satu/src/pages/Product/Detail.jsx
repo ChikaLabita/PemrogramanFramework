@@ -70,12 +70,12 @@ const Detail = () => {
         >
           Back
         </Button>
-        <h1>Product Detail</h1>
+        <h2>Product Detail</h2>
         <hr />
         <Row>
           <Col md={4}>
             <Image
-              src={"/images/" + products_state.detail.img}
+              src={"images/" + products_state.detail.img}
               className="img-thumbnail w-100"
             />
           </Col>

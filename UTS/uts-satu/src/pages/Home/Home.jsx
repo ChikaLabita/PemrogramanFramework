@@ -1,12 +1,14 @@
 import React from "react";
-
+import Productlist from "../../components/ProductList";
 const Home = () => {
   return (
     <>
       <div className="my-5">
         <h2>Selamat Datang di Toko Barakah | | Istiqomah</h2>
         <hr />
-        <h4>Belanja seperlunya ya, nanti dihisab</h4>
+        <text>Belanja seperlunya ya, xixi</text>
+        <Productlist/>
+        <hr />
       </div>
     </>
   );

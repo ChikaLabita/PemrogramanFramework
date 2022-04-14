@@ -7,7 +7,7 @@ const Mainlayout = () => {
   return (
     <>
       <Navbarcomponent />
-      <Container className="py-5" style={{ minHeight: "100vh" }}>
+      <Container className="py-15" style={{ minHeight: "100vh" }}>
         <Outlet />
       </Container>
     </>

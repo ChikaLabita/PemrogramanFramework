@@ -7,12 +7,12 @@ const About = () => {
     <>
       <Row>
         <Col className="text-left">
-          <h3>About Me</h3>
+          <h2>About Me</h2>
           <Row>
-            <Col md={4}>
+            <Col md={3}>
               <Image src={ita} className="img-thumbnail w-100" />
             </Col>
-            <Col md={8} className="text-start">
+            <Col md={9} className="text-start">
               <ListGroup>
                 <ListGroupItem>
                   <p className="fw-bold m-0">NIM</p>
