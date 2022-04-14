@@ -15,7 +15,7 @@ const Productlist = ({ limit }) => {
       dispatch(showAll());
     }
   }, [limit, dispatch]);
-  
+
   return (
     <Row className="my-5">
       {limit ? (

@@ -53,6 +53,26 @@
       "product_stock": 200,
       "total": 2000000,
       "qty": 1
+    },
+    {
+      "id": 1649941335604,
+      "product_id": 1,
+      "product_name": "Dummy",
+      "product_img": "1.jpeg",
+      "product_price": "2000000",
+      "product_stock": 200,
+      "total": 2000000,
+      "qty": 1
+    },
+    {
+      "id": 1649941673261,
+      "product_id": 2,
+      "product_name": "Dummy",
+      "product_img": "2.webp",
+      "product_price": "195000",
+      "product_stock": 100,
+      "total": 195000,
+      "qty": 1
     }
   ]
 }

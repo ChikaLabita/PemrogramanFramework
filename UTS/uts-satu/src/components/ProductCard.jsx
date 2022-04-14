@@ -31,11 +31,12 @@ const ProductCard = ({ product }) => {
           <Card.Img
             onClick={() => navigate(`/product/${product.id}`)}
             variant="top"
-            src={'/images/' + product.img}
+            src={'images/' + product.img}
             style={{ cursor: "pointer" }}
           />
           <Card.Body>
             <Card.Title>{product.name}</Card.Title>
+            <Card.Title>Rp. {product.price}</Card.Title>
             <Card.Text>
               <small className="text-dark fw-bold">
                 Stock : {product.stock}
