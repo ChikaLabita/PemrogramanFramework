@@ -316,6 +316,165 @@ function LoginPage() {
 } */
 
 //Assignment Online Shop
+/*import React from "react";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  Redirect,
+  useHistory,
+  useLocation
+} from "react-router-dom";
+
+/*export default function App() {
+  return (
+    <Router>
+      <div>
+        <AuthButton />
+        <ul>
+          <li>
+            <Link to="/home">Home</Link>
+          </li>
+          <li>
+            <Link to="/product">Products</Link>
+          </li>
+          <li>
+            <Link to="/cart">Carts</Link>
+          </li>
+          <li>
+            <Link to="/login">Login</Link>
+          </li>
+
+        </ul>
+
+        <Switch>
+          <Route path="/home">
+            <Home />
+          </Route>
+          <Route path="/product">
+            <Product />
+          </Route>
+          <Route path="/cart">
+            <Cart />
+          </Route>
+          <Route path="/login">
+            <LoginPage />
+          </Route>
+          <PrivateRoute path="/private">
+            <ProtectedPage />
+          </PrivateRoute>
+        </Switch>
+      </div>
+    </Router>
+  );
+}
+
+const fakeAuth = {
+  isAuthenticated: false,
+  authenticate(cb){
+    fakeAuth.isAuthenticated = true;
+    setTimeout(cb, 100);
+  },
+  signout(cb){
+    fakeAuth.isAuthenticated = false;
+    setTimeout(cb, 100);
+  }
+};
+
+function AuthButton() {
+  let history = useHistory();
+
+  return fakeAuth.isAuthenticated ? (
+    <p>
+      Welcome!{" "}
+      <button
+        onClick={() =>{
+          fakeAuth.signout(() => history.push("/"));
+        }}
+      >
+        Sign out
+        </button>
+    </p>
+  ) : (
+    <p>You are not logged in.</p>
+  );
+}
+
+function PrivateRoute({ children, ...rest }) {
+  return (
+    <Route
+      {...rest}
+      render={({ location }) =>
+        fakeAuth.isAuthenticated ? (
+          children
+        ) : (
+          <Redirect to={{
+            pathname: "/login",
+            state: { from: location}
+          }}
+        />
+        )
+    }
+  />
+  );
+} */
+  /*const navbar= () =>{
+    return (
+    <div>
+      <li>
+        <Link to="/home">Home</Link>
+      </li>
+      <li>
+        <Link to="/products">Products</Link>
+      </li>
+      <li>
+        <Link to="/cats">Cats</Link>
+      </li>
+      <li>
+        <Link to="/login">Login</Link>
+      </li>
+    </div>
+    );
+  }
+  export default navbar; 
+
+/*function Product() {
+  return <>
+  <hr /> <h3>Product</h3>;
+  </>
+}
+
+function Cart() {
+  return <>
+  <hr /> <h3>Cart</h3>;
+  </>
+}
+
+function ProtectedPage() {
+  return <h3>Private</h3>;
+}
+
+function LoginPage() {
+  let history = useHistory();
+  let location = useLocation();
+
+  let { from } = location.state || { from: { pathname: "/" } };
+  let login = () => {
+    fakeAuth.authenticate(() => {
+      history.replace(from);
+    });
+  };
+
+  return (
+    <div>
+      <p>You must log in to view the page at {from.pathname}</p>
+      <button onClick={login}>Log In</button>
+    </div>
+  )
+
+}
+/*
 import {
   BrowserRouter as Router,
   Switch,
@@ -370,3 +529,13 @@ export default function App(){
     </div>
   );*/
 //}
+import './App.css';
+ import Navbar from './components/Navbar';
+
+ function App() {
+ return (
+     <Navbar />
+ );
+ }
+
+ export default App;
