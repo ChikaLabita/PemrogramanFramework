@@ -73,6 +73,16 @@
       "product_stock": 100,
       "total": 195000,
       "qty": 1
+    },
+    {
+      "id": 1649992854288,
+      "product_id": 1,
+      "product_name": "Dummy",
+      "product_img": "1.jpeg",
+      "product_price": "2000000",
+      "product_stock": 200,
+      "total": 2000000,
+      "qty": 1
     }
   ]
 }
