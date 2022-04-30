@@ -53,13 +53,18 @@ class BlogPost extends Component {
     }
 
     componentDidMount() {
-        fetch('http://localhost:3001/posts?_sort=id&_order=desc')
+            API.getNewsBlog().then(result =>{
+                this.setState({
+                    listArtikel: result
+                })
+            })
+        /*fetch('http://localhost:3001/posts?_sort=id&_order=desc')
             .then(response => response.json())
             .then(jsonHasilAmbilDariAPI => {
                 this.setState({
                     listArtikel: jsonHasilAmbilDariAPI
                 })
-            })
+            })*/
     }
 
     handleHapusArtikel = (data) => {
