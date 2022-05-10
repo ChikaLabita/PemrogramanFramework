@@ -1,5 +1,6 @@
 import React, { useState, useContext } from "react";
 import { AuthContext } from "./index";
+import firebase from "firebase/compat/app";
 
 const Login = () => {
     const [email, setEmail] = useState("");
@@ -8,9 +9,19 @@ const Login = () => {
 
     const Auth = useContext(AuthContext);
     const handleForm = e => {
-        e.preventDefault();
+        /*e.preventDefault();
         console.log(Auth);
-        Auth.setLoggedIn(true);
+        Auth.setLoggedIn(true);*/
+        e.preventDefault();
+        firebase
+          .auth()
+          .signInWithEmailAndPassword(email, password)
+          .then((res) => {
+            if (res.user) Auth.setLoggedIn(true);
+          })
+          .catch((e) => {
+            setErrors(e.message);
+          });
     };
 
     return (

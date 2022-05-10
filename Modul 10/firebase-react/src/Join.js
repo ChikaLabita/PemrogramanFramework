@@ -1,5 +1,7 @@
 import React, { useState, useContext } from "react";
 import { AuthContext } from "./index";
+import firebase from "firebase/compat/app";
+import "firebase/auth"
 
 const Join = () => {
     const [email, setEmail] = useState("");
@@ -9,33 +11,53 @@ const Join = () => {
     const Auth = useContext(AuthContext);
     const handleForm = e => {
         e.preventDefault();
-        console.log(Auth);
-        Auth.setLoggedIn(true);
+        firebase
+            .auth()
+            .createUserWithEmailAndPassword(email, password)
+            .then(res => {
+                if (res.user) Auth.setLoggedIn(true);
+            })
+            .catch(e => {
+                setErrors(e.message);
+            });
+        /*console.log(Auth);
+        Auth.setLoggedIn(true);*/
+    };
+
+    const googleJoin = () => {
+        const provider = new firebase.auth.GoogleAuthProvider();
+        firebase
+            .auth()
+            .signInWithPopup(provider)
+            .then((res) => {
+                console.log(res);
+                Auth.setLoggedIn(true);
+            });
     };
 
     return (
         <div>
-             <h1>Join</h1>
+            <h1>Join</h1>
             <form onSubmit={e => handleForm(e)}>
                 <input
-                value={email}
-                onChange={e => setEmail(e.target.value)}
-                name="email"
-                type="email"
-                placeholder="email"
+                    value={email}
+                    onChange={e => setEmail(e.target.value)}
+                    name="email"
+                    type="email"
+                    placeholder="email"
                 />
                 <input
-                onChange={e => setPassword(e.target.value)}
-                name="password"
-                value={password}
-                type="password"
-                placeholder="password"
+                    onChange={e => setPassword(e.target.value)}
+                    name="password"
+                    value={password}
+                    type="password"
+                    placeholder="password"
                 />
                 <hr />
-                <button class="googleBtn" type="button">
+                <button class="googleBtn" type="button" onClick={() => googleJoin}>
                     <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"
-                    alt="logo"
+                        src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"
+                        alt="logo"
                     />
                     Join with Google
                 </button>
