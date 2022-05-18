@@ -1,5 +1,5 @@
 import React, { useState, useContext } from "react";
-import { AuthContext } from "./index";
+import { AuthContext } from ".";
 import firebase from "firebase/compat/app";
 import "firebase/auth"
 
@@ -61,7 +61,7 @@ const Join = () => {
                     />
                     Join with Google
                 </button>
-                <button type="submit">Login</button>
+                <button type="submit">Join</button>
                 <span>{error}</span>
             </form>
         </div>

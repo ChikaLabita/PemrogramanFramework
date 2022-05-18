@@ -5,7 +5,8 @@ import routes from "./routes.js";
 import Header from "./Header";
 import "./style.css";
 import firebase from "firebase/compat/app";
-import firebaseConfig from "./firebase.config.js";
+import "firebase/compat/auth"
+import firebaseConfig from "./firebase.config";
 
 firebase.initializeApp(firebaseConfig);
 
