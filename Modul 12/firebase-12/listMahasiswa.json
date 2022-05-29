@@ -1,0 +1,38 @@
+{
+  "mahasiswa": [
+    {
+      "id": 19,
+      "NIM": 1941720018,
+      "nama": "Chika Labita",
+      "alamat": "Dusun Palang",
+      "hp": "085230956459",
+      "angkatan": 2019,
+      "status": "aktif"
+    },
+    {
+      "NIM": 1941720017,
+      "nama": "Abdullah",
+      "alamat": "Jl. Hijrah",
+      "hp": "088874503142",
+      "angkatan": 2019,
+      "status": "Aktif"
+    },
+    {
+      "NIM": "1941720015",
+      "nama": "Fatimah Az-Zahra",
+      "alamat": "Jl. Kasturi",
+      "hp": "087014224551",
+      "angkatan": "2019",
+      "status": "Aktif"
+    },
+    {
+      "id": 1651140688442,
+      "NIM": "1941720018",
+      "nama": "Chika",
+      "alamat": "Palang",
+      "hp": "085230956459",
+      "angkatan": "2019",
+      "status": "Aktif"
+    }
+  ]
+}
