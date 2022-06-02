@@ -106,10 +106,10 @@ class BlogPost extends Component {
           </div>
           <input type="hidden" name="uid" ref="uid" />
           <Grid container justify="center">
-           <Button color="primary" size="large" type="submit" variant="contained" className="btn btn-primary"
-            onClick={this.handleTombolSimpan}>
-           Simpan
-           </Button>
+            <Button color="primary" size="large" type="submit" variant="contained" className="btn btn-primary"
+              onClick={this.handleTombolSimpan}>
+              Simpan
+            </Button>
           </Grid>
         </div>
         <h2 className="mt-2 fw-bolder">Daftar Artikel</h2>
